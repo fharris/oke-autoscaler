@@ -71,7 +71,7 @@ variable "pods_nsg_ids" {
 }
 
 variable "oke_cluster_name" {
-  default = "MyTFOKECluster"
+  default = "TFOKEAutoScalerCluster"
 }
 
 variable "vcn_native" {
@@ -133,7 +133,7 @@ variable "max_pods_per_node" {
   //if not flannel TBC FH
   default = 10
 }
-
+//Cluster CNI
 variable "pods_cidr" {
   // https://docs.oracle.com/en-us/iaas/Content/ContEng/Tasks/contengbestpractices_topic-Networking-best-practices.htm#contengbestpractices_topic-Networking-best-practices__Networking-Plannumberofnodes
   // When using the flannel CNI plugin, clusters created by Kubernetes Engine reserve a /25 range for pods from the flannel overlay network, and allow up to 110 pods per node
@@ -141,11 +141,13 @@ variable "pods_cidr" {
   //default = "10.74.4.0/25" //126 hosts from 10.74.255.1 - 10.74.255.126// /16 !? FH
 }
 
+//Cluster CNI
 variable "services_cidr" {
   default = "10.2.0.0/16"
   //default = "10.74.5.0/21" //128 hosts from 10.74.64.1 - 10.74.64.126 /16 !? FH
 }
 
+//Cluster CNI
 variable "pods_subnet_cidr" { //TBC only if not using Flannel TBC FH 
    // https://docs.oracle.com/en-us/iaas/Content/ContEng/Tasks/contengbestpractices_topic-Networking-best-practices.htm#contengbestpractices_topic-Networking-best-practices__Networking-Plannumberofnodes
   // When using the flannel CNI plugin, clusters created by Kubernetes Engine reserve a /25 range for pods from the flannel overlay network, and allow up to 110 pods per node
@@ -198,11 +200,11 @@ variable "autoscaler_min_number_of_nodes" {
 }
 
 variable "autoscaler_max_number_of_nodes" {
-  default = 200
+  default = 500
 }
 
 variable "autoscaler_skipNodesWithSystemPods"{
-  //false willenforcing cluster autoscaler to delete nodes with kube-system pods (except for DaemonSet or mirror pods).
+  //false will enforce cluster autoscaler to delete nodes with kube-system pods (except for DaemonSet or mirror pods).
   default = false
 }
 
