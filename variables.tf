@@ -118,7 +118,7 @@ variable "node_pool_boot_volume_size_in_gbs" {
 }
 
 variable "node_ocpus" {
-  default = 2
+  default = 1
 }
 
 variable "node_memory" {
