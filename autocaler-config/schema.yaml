@@ -103,7 +103,7 @@ variables:
     description: "Choose number of Nodes in your OKE Enhanced Cluster's Nodepools (regular & autoscaler)"
     type: integer
     minimum: 1
-    maximum: 365
+    maximum: 600
     multipleOf: 1
     default: 3
     required: true
@@ -127,6 +127,6 @@ variables:
     minimum: 1
     maximum: 600
     multipleOf: 1
-    default: 5
+    default: 600
     required: true
     visible: true
