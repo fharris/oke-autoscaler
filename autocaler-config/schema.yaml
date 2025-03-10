@@ -1,8 +1,8 @@
-title: "FoggyKitchen OCI Container Engine for Kubernetes with Terraform - LESSON 5 - Creating OKE Enhanced Cluster with Autoscaler OKE Add-on."
-description: "In this lesson, you will learn to use Terraform to set up OKE Enhanced Cluster with Autoscaler OKE Add-on."
-stackDescription: "In this lesson, you will learn to use Terraform to set up OKE Enhanced Cluster with Autoscaler OKE Add-on."
+title: "OKE Enhanced Cluster with Autoscaler OKE Add-on."
+description: "Terraform to set up OKE Enhanced Cluster with Autoscaler OKE Add-on."
+stackDescription: "Terraform to set up OKE Enhanced Cluster with Autoscaler OKE Add-on."
 schemaVersion: 1.1.0
-version: "20201028"
+version: "20250310"
 locale: "en"
 
 variableGroups:
@@ -125,7 +125,7 @@ variables:
     description: "Choose maximum number of Nodes in OKE Cluster Autoscaler NodePool"
     type: integer
     minimum: 1
-    maximum: 365
+    maximum: 600
     multipleOf: 1
     default: 5
     required: true
