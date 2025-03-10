@@ -118,11 +118,11 @@ variable "node_pool_boot_volume_size_in_gbs" {
 }
 
 variable "node_ocpus" {
-  default = 1
+  default = 2
 }
 
 variable "node_memory" {
-  default = 16
+  default = 8
 }
 
 variable "oci_vcn_ip_native" {
