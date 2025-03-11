@@ -37,7 +37,8 @@ variable "nodepool_subnet_id" {
 
 variable "nodepool_subnet_cidr" {
   //default = "10.0.1.0/24" 
-  default = "10.74.0.0/21"
+  //default = "10.74.0.0/21"
+  default = "10.74.72.0/21"
 }
 
 variable "lb_subnet_id" {
@@ -46,7 +47,8 @@ variable "lb_subnet_id" {
 
 variable "lb_subnet_cidr" {
   //default = "10.0.2.0/24"
-  default = "10.74.2.0/24"
+  //default = "10.74.2.0/24"
+  default = "10.74.65.0/24"
 }
 
 variable "api_endpoint_subnet_id" {
@@ -55,7 +57,8 @@ variable "api_endpoint_subnet_id" {
 
 variable "api_endpoint_subnet_cidr" {
   //default = "10.0.3.0/24"
-  default = "10.74.3.0/29"
+  //default = "10.74.3.0/29"
+  default = "10.74.64.0/29"
 }
 
 variable "api_endpoint_nsg_ids" {
