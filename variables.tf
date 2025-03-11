@@ -108,7 +108,7 @@ variable "node_shape" {
 }
 
 variable "autoscaler_node_shape" {
-  default = "VM.Standard.E5.Flex"
+  default = "VM.Standard.E4.Flex"
 }
 
 
