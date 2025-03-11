@@ -37,7 +37,7 @@ variable "nodepool_subnet_id" {
 
 variable "nodepool_subnet_cidr" {
   //default = "10.0.1.0/24" 
-  default = "10.74.1.0/24"
+  default = "10.74.1.0/21"
 }
 
 variable "lb_subnet_id" {
