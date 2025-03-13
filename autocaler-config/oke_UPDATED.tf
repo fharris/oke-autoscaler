@@ -11,9 +11,9 @@ module "fk-oke" {
   node_linux_version                    = var.node_linux_version
   oci_vcn_ip_native                     = false
   use_existing_vcn                      = false
-  is_api_endpoint_subnet_public         = false # OKE API Endpoint will be public (Internet facing)
-  is_lb_subnet_public                   = false # OKE LoadBalanacer will be public (Internet facing)
-  is_nodepool_subnet_public             = true # OKE NodePool will be private (not Internet facing)
+  is_api_endpoint_subnet_public         = false 
+  is_lb_subnet_public                   = false 
+  is_nodepool_subnet_public             = true 
   autoscaler_enabled                    = var.enable_autoscaler_addon # Enabling Autoscaler as OKE Add-On
   autoscaler_authtype_workload          = var.autoscaler_authtype_workload # Decide what type of Autoscaler AuthType (Workload vs Instance Principal)
   autoscaler_min_number_of_nodes        = var.min_number_of_nodes # Autoscaler minimum number of nodes
