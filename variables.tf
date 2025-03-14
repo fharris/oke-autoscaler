@@ -125,7 +125,7 @@ variable "node_ocpus" {
 }
 
 variable "node_memory" {
-  default = 8
+  default = 16
 }
 
 variable "oci_vcn_ip_native" {
