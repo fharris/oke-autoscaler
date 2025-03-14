@@ -10,7 +10,7 @@ creation of an OKE Enhanced Cluster with the Autoscaler as an OKE Add-on
 ## Deploy Using Oracle Resource Manager
 
 
-1. Click [![Deploy to Oracle Cloud](https://oci-resourcemanager-plugin.plugins.oci.oraclecloud.com/latest/deploy-to-oracle-cloud.svg)](https://cloud.oracle.com/resourcemanager/stacks/create?region=home&zipUrl=https://github.com/fharris/oke-autoscaler/releases/latest/download/autocaler-config.zip)
+1. Click [![Deploy to Oracle Cloud](https://oci-resourcemanager-plugin.plugins.oci.oraclecloud.com/latest/deploy-to-oracle-cloud.svg)](https://cloud.oracle.com/resourcemanager/stacks/create?region=home&zipUrl=https://github.com/fharris/oke-autoscaler/releases/latest/download/autoscaler-config.zip)
 
 
 
