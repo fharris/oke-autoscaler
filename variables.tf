@@ -175,7 +175,7 @@ variable "node_count" {
 }
 
 variable "autoscaler_node_count" {
-  default = 3
+  default = 1
 }
 
 variable "autoscaler_enabled" {
@@ -199,7 +199,7 @@ variable "autoscaler_node_pool_count" {
 }
 
 variable "autoscaler_min_number_of_nodes" {
-  default = 3
+  default = 1
 }
 
 variable "autoscaler_max_number_of_nodes" {
