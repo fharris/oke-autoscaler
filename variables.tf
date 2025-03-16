@@ -171,7 +171,7 @@ variable "node_pool_count" {
 }
 
 variable "node_count" {
-  default = 3
+  default = 1
 }
 
 variable "autoscaler_node_count" {
