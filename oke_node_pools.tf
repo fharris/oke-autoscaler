@@ -51,18 +51,6 @@ resource "oci_containerengine_node_pool" "fk_oke_node_pool" {
       content {
         availability_domain = pc_iter.value.name        
         subnet_id           = var.use_existing_vcn ? var.nodepool_subnet_id : oci_core_subnet.fk_oke_nodepool_subnet[0].id
-        preemptible_node_config {
-                #Required
-                #Consider using on-demand capacity for the system critical node pool
-                preemption_action {
-                    #Required
-                    #type = var.node_pool_node_config_details_placement_configs_preemptible_node_config_preemption_action_type
-                    type = "TERMINATE"
-                    #Optional
-                    #is_preserve_boot_volume = var.node_pool_node_config_details_placement_configs_preemptible_node_config_preemption_action_is_preserve_boot_volume
-                    is_preserve_boot_volume = false
-                }
-            }
       }
     }
     size = var.node_count
