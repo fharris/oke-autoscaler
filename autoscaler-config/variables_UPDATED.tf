@@ -22,11 +22,11 @@ variable "node_linux_version" {
 }
 
 variable "node_pool_size" {
-  default = 3
+  default = 1
 }
 
 variable "min_number_of_nodes" {
-  default = 3
+  default = 1
 }
 
 variable "max_number_of_nodes" {
