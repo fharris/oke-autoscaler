@@ -178,6 +178,11 @@ variable "autoscaler_node_count" {
   default = 1
 }
 
+variable "bk_autoscaler_node_count" {
+  //use this to have autoscaler backup nodepools with 0 worker nodes
+  default = 0
+}
+
 variable "autoscaler_enabled" {
   default = true
 }
@@ -200,6 +205,11 @@ variable "autoscaler_node_pool_count" {
 
 variable "autoscaler_min_number_of_nodes" {
   default = 1
+}
+
+variable "backup_autoscaler_min_number_of_nodes" {
+  //use this to have autoscaler backup nodepools with 0 worker nodes
+  default = 0
 }
 
 variable "autoscaler_max_number_of_nodes" {
