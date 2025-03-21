@@ -121,7 +121,7 @@ variable "node_pool_boot_volume_size_in_gbs" {
 }
 
 variable "node_ocpus" {
-  default = 2
+  default = 4
 }
 
 variable "node_memory" {
@@ -192,14 +192,18 @@ variable "autoscaler_authtype_workload" {
 }
 
 variable "autoscaler_scale_down_delay_after_add" {
-  default = "15m"
+  default = "5m"
 }
 
 variable "autoscaler_scale_down_unneeded_time" {
-  default = "10m"
+  default = "5m"
 }
 
 variable "autoscaler_node_pool_count" {
+  default = 1
+}
+
+variable "bk_autoscaler_node_pool_count" {
   default = 3
 }
 
