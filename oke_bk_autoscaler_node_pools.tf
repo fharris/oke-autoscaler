@@ -1,6 +1,6 @@
 resource "oci_containerengine_node_pool" "fk_oke_bk_autoscaler_node_pool" {
   depends_on         = [oci_containerengine_node_pool.fk_oke_node_pool]
-  count              = var.virtual_node_pool ? 0 : var.autoscaler_enabled ? var.autoscaler_node_pool_count : 0
+  count              = var.virtual_node_pool ? 0 : var.autoscaler_enabled ? var.bk_autoscaler_node_pool_count : 0
   cluster_id         = oci_containerengine_cluster.fk_oke_cluster.id
   compartment_id     = var.compartment_ocid
   kubernetes_version = var.k8s_version
