@@ -7,8 +7,10 @@ resource "oci_containerengine_node_pool" "fk_oke_node_pool" {
   node_shape         = var.node_shape
 
   initial_node_labels {
-    key   = var.node_pool_initial_node_labels_key
-    value = var.node_pool_initial_node_labels_value
+    #key   = var.node_pool_initial_node_labels_key
+    #value = var.node_pool_initial_node_labels_value
+     key   = "node-role.kubernetes.io/infra"
+     value = "true"
   }
 
   # oke specific images
