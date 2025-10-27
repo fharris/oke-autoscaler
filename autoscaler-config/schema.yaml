@@ -80,12 +80,10 @@ variables:
   kubernetes_version:
     title: "Kubernetes Version"
     description: "Choose Kubernetes Version for your OKE Enhanced Cluster"
-    default: "v1.31.1"
+    default: "v1.33.1"
     required: false
     type: enum
     enum: 
-      - "v1.34.1"
-      - "v1.34.0"
       - "v1.33.1"
       - "v1.31.1"
    
@@ -133,3 +131,4 @@ variables:
     required: true
 
     visible: true
+
