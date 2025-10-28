@@ -1,6 +1,6 @@
 # OKE OCI Container Engine for Kubernetes with Terraform 
 
-# ajusted from martin_lin, open source
+ adjusted from martin_lin, open source
 
 ## OKE Enhanced Cluster with Autoscaler OKE Add-on
 
