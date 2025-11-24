@@ -28,7 +28,7 @@ variable "vcn_cidr" {
 }
 
 variable "vcn_id" {
-  default = ""
+  default = "ocid1.vcn.oc1.eu-frankfurt-1.amaaaaaauevftmqafbr5wa4gnbho23mdebyehdjkvq6pphb6febkz5tj7n5q"
 }
 
 variable "nodepool_subnet_id" {
